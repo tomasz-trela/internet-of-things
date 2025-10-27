@@ -3,7 +3,6 @@ const int greenButtonPin = 4;
 
 void setup() {
   Serial.begin(9600);
-
   pinMode(redButtonPin, INPUT_PULLUP);
   pinMode(greenButtonPin, INPUT_PULLUP);
 }
@@ -12,9 +11,10 @@ void loop() {
   int redButtonState = !digitalRead(redButtonPin);
   int greenButtonState = !digitalRead(greenButtonPin);
 
+  Serial.print("Red: ");
   Serial.print(redButtonState);
-  Serial.print(" ");
+  Serial.print("\t");
+  Serial.print("Green: ");
   Serial.println(greenButtonState);
-
   delay(10);
 }
