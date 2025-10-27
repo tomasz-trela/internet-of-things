@@ -1,14 +1,17 @@
-#define POTENTIOMETER_PIN A0
+const int analogPin = A0;
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  int adcValue = analogRead(POTENTIOMETER_PIN);
-  float voltage = (adcValue / 1023.0) * 5.0;
-  
+  int sensorValue = analogRead(analogPin);
+  float voltage = sensorValue * (5.0 / 1023.0); 
+
+  Serial.print("ADC: ");
+  Serial.print(sensorValue);
+  Serial.print("\tVoltage: ");
   Serial.println(voltage);
 
-  delay(50);
+  delay(100);
 }
