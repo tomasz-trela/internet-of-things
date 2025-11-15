@@ -1,0 +1,22 @@
+#######################################
+# Syntax Coloring Map For RgbLedController
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+RgbLedController	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+init		KEYWORD2
+setColor	KEYWORD2
+setRed		KEYWORD2
+setGreen	KEYWORD2
+setBlue		KEYWORD2
+setYellow	KEYWORD2
+setCyan		KEYWORD2
+setMagenta	KEYWORD2
+setWhite	KEYWORD2
+setBlack	KEYWORD2
